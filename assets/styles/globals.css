@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* 🎨 Theme customization */
+@theme inline {
+  /* custom font */
+  --font-sans: "Poppins", sans-serif;
+
+  /* custom grid column setup */
+  --grid-cols-70\\/30: 70% 28%;
+}
+
+/* Example base colors or layout if you need them */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
